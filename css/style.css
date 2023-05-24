@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(171, 241, 241);
+    background-color: rgb(255, 255, 255);
 }
 /* sezione immagini */
 .img-container{
@@ -23,9 +23,42 @@
 .slides{
     width: 100%;
     height: 100%;
+    display: none;
+    text-align: left;
+    border: 5px solid #324353;
+    box-shadow: 3px 15px 25px 5px #25323d;
 }
 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.slide.active{
+    display: block;
+}
+/* sezione bottoni */
+#bttn-1, #bttn-2{
+    border-radius: 50%;
+    width: 30px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    background-color: #f1ededa6;
+    cursor: pointer;
+}
+#bttn-1:hover, #bttn-2:hover{
+    background-color: white;
+}
+.buttons-container{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    height: 30rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
 }
